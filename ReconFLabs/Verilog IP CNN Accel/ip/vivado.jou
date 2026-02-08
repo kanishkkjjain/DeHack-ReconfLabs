@@ -1,0 +1,165 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Feb  7 03:10:53 2026
+# Process ID         : 24416
+# Current directory  : C:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent32260 C:\BITS Pilani\Personal Projects\C2S\Vipin Code\SpatialFilter-master\SpatialFilter-master\ip\imageProcessing.xpr
+# Log file           : C:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip/vivado.log
+# Journal file       : C:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip\vivado.jou
+# Running On         : Kanishk
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16788 MB
+# Swap memory        : 16788 MB
+# Total Virtual      : 33577 MB
+# Available Virtual  : 14188 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip/imageProcessing.xpr}
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -srcset outputBuffer -vlnv xilinx.com:ip:fifo_generator:13.2 [get_ips  outputBuffer] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips outputBuffer] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+generate_target all [get_files {c:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip/imageProcessing.srcs/sources_1/ip/outputBuffer/outputBuffer.xci}]
+export_ip_user_files -of_objects [get_files {c:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip/imageProcessing.srcs/sources_1/ip/outputBuffer/outputBuffer.xci}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{c:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip/imageProcessing.srcs/sources_1/ip/outputBuffer/outputBuffer.xci}}] -directory D:/VivadoProject/ip_repo/imageProcessing/imageProcessing.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/ip_repo/imageProcessing/imageProcessing.ip_user_files -ipstatic_source_dir D:/VivadoProject/ip_repo/imageProcessing/imageProcessing.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip/imageProcessing.cache/compile_simlib/modelsim} {questa=C:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip/imageProcessing.cache/compile_simlib/questa} {riviera=C:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip/imageProcessing.cache/compile_simlib/riviera} {activehdl=C:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip/imageProcessing.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset outputBuffer
+set_property top outputBuffer [get_fileset outputBuffer]
+move_files -fileset [get_fileset outputBuffer] [get_files -of_objects [get_fileset sources_1] {{c:/BITS Pilani/Personal Projects/C2S/Vipin Code/SpatialFilter-master/SpatialFilter-master/ip/imageProcessing.srcs/sources_1/ip/outputBuffer/outputBuffer.xci}}]
+launch_run outputBuffer_synth_1
+wait_on_run outputBuffer_synth_1
+
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+ls -l lena_gray.bmp
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 s
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source tb.tcl
+run 100 us
+run 1000 us
+run 1000 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+close_sim

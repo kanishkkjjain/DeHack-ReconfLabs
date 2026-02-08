@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.venv/
+venv/
+
+# C
+*.o
+*.a
+*.so
+*.out
+*.exe
+*.dylib
+*.dll
+
+# SystemVerilog / Verilog
+*.vcd
+*.wdb
+*.fsdb
+work/
+*.log
+xsim.dir/
+xsim.key
+xsim.pb
+.Xil/
+
+# System
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
